@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import {
   BellIcon,
-  ChatIcon,
+  ChatBubbleLeftEllipsisIcon,
   ChevronDownIcon,
   HomeIcon,
   UserGroupIcon,
-  ViewGridIcon,
+  Squares2X2Icon,
 } from "@heroicons/react/24/solid";
 import {
   FlagIcon,
@@ -50,8 +50,8 @@ function Header() {
         <div className="flex items-center sm:space-x-2 justify-end">
           {/* Profile pic */}
           <p className="font-semibold pr-3 whitespace-nowrap">Slawa Pailak</p>
-          <ViewGridIcon className="icon" />
-          <ChatIcon className="icon" />
+          <Squares2X2Icon className="icon" />
+          <ChatBubbleLeftEllipsisIcon className="icon" />
           <BellIcon className="icon" />
           <ChevronDownIcon className="icon" />
         </div>
