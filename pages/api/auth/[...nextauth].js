@@ -1,10 +1,10 @@
 import NextAuth from "next-auth"
-import Provider from "next-auth/providers"
+import { SessionProvider } from "next-auth/react";
 
 export default NextAuth( {
   // Configure one or more authentication providers
-  providers: [
-    Provider.Facebook({
+  getProviders: [
+    SessionProvider.Facebook({
       clientId: process.env.FACEBOOK_CLIENT_ID,
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
     }),
