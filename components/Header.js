@@ -61,7 +61,7 @@ function Header() {
           alt="login image"
           />
 
-          <p className="font-semibold pr-3 whitespace-nowrap">Slawa Pailak</p>
+          <p className="font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
           <Squares2X2Icon className="icon" />
           <ChatBubbleLeftEllipsisIcon className="icon" />
           <BellIcon className="icon" />
