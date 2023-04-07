@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Head from "next/head";
 import Login from "@/components/Login";
 import {getSession} from "next-auth/react";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home({ session }) {
   if (!session) return <Login />;

@@ -10,6 +10,7 @@ import {
     UserGroupIcon,
     ShoppingCartIcon,
   } from "@heroicons/react/24/outline";
+  import SidebarRow from "./SidebarRow";
 
 function Sidebar() {
     const [session,loading] = useSession();
