@@ -7,7 +7,7 @@ const stories = [
     },
     {
         name: "Jeff Bezoz",
-        src: "https://i.ibb.co/Ntf3Vmy/Bezos.jpg",
+        src: "https://i.ibb.co/VBQfZXd/Bezos.jpg",
     },
     {
         name: "Mark Zuckerberg",
