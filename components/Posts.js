@@ -1,11 +1,13 @@
 import {useCollection} from "react-firebase-hooks/firestore";
-import { db } from "@/firebase";
+import { db } from "../firebase";
+import Post from "./Post";
 
 function Posts() {
 
-    const [realtimePosts,loading,error] = useCollection(
+    const [realtimePosts] = useCollection(
         db.collection('posts').orderBy('timestamp','desc')
-    )
+    );
+    
   return (
     <div>
         {realtimePosts?.docs.map(post => {
