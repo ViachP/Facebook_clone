@@ -4,7 +4,7 @@ import Post from "./Post";
 
 function Posts() {
 
-    const [realtimePosts] = useCollection(
+    const {realtimePosts} = useCollection(
         db.collection('posts').orderBy('timestamp','desc')
     );
     
