@@ -1,6 +1,6 @@
-import InputBox from "./InputBox"
-import Stories from "./Stories"
-import Posts from "./Posts"
+import InputBox from "./InputBox";
+import Stories from "./Stories";
+import Posts from "./Posts";
 
 function Feed() {
   return (
@@ -9,9 +9,9 @@ function Feed() {
         <Stories />
         <InputBox />
         <Posts />
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Feed
+export default Feed;

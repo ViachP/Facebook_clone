@@ -19,7 +19,13 @@ function Post({ name, message, email, postImage, image, timestamp }) {
           </p>
         </div>
       </div>
+      <p className="pt-4">{message}</p>
       </div>
+      {postImage && (
+        <div>
+          <Image src={postImage}  alt=""/>
+        </div>
+      )}
     </div>
   );
 }
