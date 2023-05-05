@@ -1,4 +1,9 @@
 import Image from "next/image";
+import {
+  ChatBubbleLeftIcon,
+  HandThumbUpIcon,
+  ShareIcon,
+} from "@heroicons/react/24/outline";
 
 function Post({ name, message, email, postImage, image, timestamp }) {
   return (
@@ -26,6 +31,22 @@ function Post({ name, message, email, postImage, image, timestamp }) {
           <Image src={postImage} width={300} height={200} alt="" />
         </div>
       )}
+
+      {/* Footer of post */}
+      <div className="flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t">
+        <div className="inputIcon rounded-none rounded-bl-2xl">
+          <HandThumbUpIcon className="h-4" />
+          <p className="text-xs sm:text-base">Like</p>
+        </div>
+        <div className="inputIcon rounded-none">
+          <ChatBubbleLeftIcon className="h-4" />
+          <p className="text-xs sm:text-base">Comment</p>
+        </div>
+        <div className="inputIcon rounded-none rounded-br-2xl">
+          <ShareIcon className="h-4" />
+          <p className="text-xs sm:text-base">Share</p>
+        </div>
+      </div>
     </div>
   );
 }
