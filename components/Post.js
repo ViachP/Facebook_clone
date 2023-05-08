@@ -28,7 +28,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
       </div>
       {postImage && (
         <div>
-          <Image src={postImage} width={300} height={200} alt="" />
+          <Image src={postImage} width={700} height={300} alt="" />
         </div>
       )}
 
