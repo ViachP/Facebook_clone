@@ -4,6 +4,8 @@ import {
   EllipsisHorizontalIcon,
 } from "@heroicons/react/24/solid";
 
+import Contact from "./Contact";
+
 const contacts = [
   {
     name: "Elon Mask",
@@ -34,6 +36,9 @@ function Widgets() {
           <EllipsisHorizontalIcon className="h-6" />
         </div>
       </div>
+      {contacts.map(contact => (
+        <Contact key={contact.src} src={contact.src} name={contact.name} />
+      ))}
     </div>
   );
 }
