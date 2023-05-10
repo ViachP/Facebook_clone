@@ -6,13 +6,14 @@ function StoryCard({ name, src }) {
       <Image
         className="object-cover brightness-80 rounded-3xl"
         src={src}
-        alt="small_image"
+        alt={name}
         loading='lazy'
         fill
         sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
       />
+      <div className="absolute bottom-0 left-0 right-0 text-white text-center p-2">{name}</div>
     </div>
   );
 }
