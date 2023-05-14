@@ -21,7 +21,7 @@ function Header() {
   const {data: session} = useSession()
 
   return (
-    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
+    <div className="sticky top-0 z-50 bg-white items-center p-2 lg:px-5 shadow-md">
       {/* Left */}
       <div className="flex items-center">
         <Image
@@ -61,7 +61,7 @@ function Header() {
           alt="login image"
           />
 
-          <p className="font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
+          <p className="font-semibold pr-3 whitespace-nowrap hidden sm:inline-flex">{session.user.name}</p>
           <Squares2X2Icon className="icon" />
           <ChatBubbleLeftEllipsisIcon className="icon" />
           <BellIcon className="icon" />

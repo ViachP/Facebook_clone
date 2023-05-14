@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Head from "next/head";
 import Login from "@/components/Login";
-import {getSession} from "next-auth/react";
+import { getSession } from "next-auth/react";
 import Sidebar from "@/components/Sidebar";
 import Feed from "@/components/Feed";
 import Widgets from "@/components/Widgets";
