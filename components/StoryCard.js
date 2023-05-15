@@ -2,9 +2,9 @@ import Image from "next/image";
 
 function StoryCard({ name, src }) {
   return (
-    <div className="relative w-16 h-16 md:w-20 md:h-24 lg:w-28 lg:h-56">
+    <div className="relative w-16 h-16 md:w-20 md:h-24 lg:w-32 lg:h-56 cursor-pointer overflow-x p-3 transition duration-200 transform ease-in hover:scale-105 hover:animate-pulse">
       <Image
-        className="object-cover brightness-80 rounded-3xl cursor-pointer hover:scale-105 transition duration-200 ease-in shadow-none  hover:shadow-lg hover:shadow-black/5 dark:hover:shadow-black/30"
+        className="object-cover filter brightness-80 rounded-3xl shadow-none  hover:shadow-lg hover:shadow-black/5 dark:hover:shadow-black/30"
         src={src}
         alt={name}
         loading='lazy'
